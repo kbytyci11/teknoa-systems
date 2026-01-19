@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TeKnoa Systems | IT & Digital Solutions</title>
+
+  <!-- SEO -->
+  <meta name="description" content="TeKnoa Systems – Professional IT & Digital Marketing Solutions in Tirana, Albania">
+  <meta name="keywords" content="IT Albania, Software Development, Web Development, Digital Marketing">
+  <meta name="author" content="TeKnoa Systems">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --surface: #12182f;
+      --accent: #00e0ff;
+      --text: #e6e8f0;
+      --muted: #9aa3b2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11,15,26,0.9);
+      backdrop-filter: blur(10px);
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      height: 38px;
+      width: auto;
+    }
+
+    header h1 {
+      color: var(--accent);
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--text);
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .lang-switch button {
+      margin-left: 10px;
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero img.hero-img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: var(--muted);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: var(--surface);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #070a14;
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <!-- ====== LOGO KËTU ====== -->
+    <img src="img/logo.jpg" alt="TeKnoa Logo">
+    <h1>TeKnoa Systems</h1>
+  </div>
+
+  <nav>
+    <a href="#about" data-en="About" data-sq="Rreth Nesh">About</a>
+    <a href="#services" data-en="Services" data-sq="Shërbimet">Services</a>
+    <a href="#contact" data-en="Contact" data-sq="Kontakt">Contact</a>
+  </nav>
+
+  <div class="lang-switch">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('sq')">SQ</button>
+  </div>
+</header>
+
+<section class="hero">
+  <!-- ====== FOTO KOMPANIE KËTU ====== -->
+  <img class="hero-img" src="img/company.jpg" alt="TeKnoa Team">
+  <h2 data-en="Innovative IT & Digital Solutions for Modern Businesses"
+      data-sq="Zgjidhje Inovative IT & Digjitale për Biznese Moderne">
+    Innovative IT & Digital Solutions for Modern Businesses
+  </h2>
+  <p data-en="We build scalable, secure and high-performance digital products for companies worldwide."
+     data-sq="Ne ndërtojmë produkte digjitale të sigurta, të shkallëzueshme dhe me performancë të lartë për kompani brenda dhe jashtë vendit.">
+    We build scalable, secure and high-performance digital products for companies worldwide.
+  </p>
+</section>
+
+<section id="about">
+  <h2 data-en="About Us" data-sq="Rreth Nesh">About Us</h2>
+  <p data-en="Founded in Germany and now headquartered in Tirana, TeKnoa Systems brings 10 years of hands-on experience in the German tech market. Our team holds German university degrees and has delivered robust software, IT-consulting and digital-marketing projects for Mittelstand companies and international clients alike. We merge German quality standards with Albanian agility to offer solutions that are precise, scalable and cost-effective."
+     data-sq="Themeluar në Gjermani dhe me seli tani në Tiranë, TeKnoa Systems bart 10 vjet përvojë praktike në tregun gjerman të teknologjisë. Ekipi ynë zotëron diploma universitare gjermane dhe ka realizuar projekte software-i, konsulence IT dhe marketingu digjital për kompani të mesme dhe klientë ndërkombëtarë. Ne përziejmë standardet gjermane të cilësisë me shpejtësinë shqiptare për të ofruar zgjidhje të sakta, të shkallëzueshme dhe me kosto efektive.">
+    Founded in Germany and now headquartered in Tirana, TeKnoa Systems brings 10 years of hands-on experience in the German tech market. Our team holds German university degrees and has delivered robust software, IT-consulting and digital-marketing projects for Mittelstand companies and international clients alike. We merge German quality standards with Albanian agility to offer solutions that are precise, scalable and cost-effective.
+  </p>
+</section>
+
+<section id="services">
+  <h2 data-en="Our Services" data-sq="Shërbimet Tona">Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 data-en="Custom Software Development" data-sq="Zhvillim Software i Personalizuar">
+        Custom Software Development
+      </h3>
+      <p data-en="Tailored software solutions for your business needs."
+         data-sq="Zgjidhje software të personalizuara për nevojat e biznesit tuaj.">
+        Tailored software solutions for your business needs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-en="Web Development" data-sq="Zhvillim Web">
+        Web Development
+      </h3>
+      <p data-en="Fast, secure and modern websites and platforms."
+         data-sq="Website dhe platforma moderne, të shpejta dhe të sigurta.">
+        Fast, secure and modern websites and platforms.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-en="IT Consulting" data-sq="Konsulencë IT">
+        IT Consulting
+      </h3>
+      <p data-en="Strategic planning and optimization of IT systems."
+         data-sq="Planifikim strategjik dhe optimizim i sistemeve IT.">
+        Strategic planning and optimization of IT systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-en="Digital Marketing & SEO" data-sq="Marketing Digjital & SEO">
+        Digital Marketing & SEO
+      </h3>
+      <p data-en="Growth-focused digital strategies and SEO."
+         data-sq="Strategji digjitale dhe SEO të fokusuara në rritje.">
+        Growth-focused digital strategies and SEO.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 data-en="Contact Us" data-sq="Na Kontaktoni">Contact Us</h2>
+  <p>Email: info@teknoasystems.com</p>
+  <p data-en="Location: Tirana, Albania"
+     data-sq="Vendndodhja: Tiranë, Shqipëri">
+    Location: Tirana, Albania
+  </p>
+</section>
+
+<footer>
+  © 2026 TeKnoa Systems. All rights reserved.
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+  }
+</script>
+
+</body>
+</html>
